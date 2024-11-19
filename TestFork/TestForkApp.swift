@@ -12,6 +12,10 @@ struct TestForkApp: App {
     var body: some Scene {
         DocumentGroup(newDocument: TestForkDocument()) { file in
             ContentView(document: file.$document)
+
         }
+
+
+        
     }
 }
