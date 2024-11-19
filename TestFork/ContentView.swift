@@ -11,7 +11,9 @@ struct ContentView: View {
     @Binding var document: TestForkDocument
 
     var body: some View {
-        TextEditor(text: $document.text)
+        VStack {
+            TextEditor(text: $document.text)
+        }
     }
 }
 
